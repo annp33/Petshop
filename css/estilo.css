@@ -1,0 +1,546 @@
+@charset "UTF-8";
+
+
+/*importando fonte google*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/*usando fonte baixada*/
+@font-face{
+    font-family: 'Delius Swash Cap';
+    src: url('../fontes/Delius_Swash_Caps/DeliusSwashCaps-Regular.ttf') format('truetype');
+}
+
+
+/*configuração de variáveis*/
+:root{
+    --cor0: #8ddee2;
+    --cor1: #63d2ee;
+    --cor2: #00a5ce;
+    --cor3: #FFD31A;
+    --cor4: #f3a920;
+    --cor5: #f08000;
+    --cor6: #505050;
+
+    --fonte-decorativa: 'Delius Swash Cap', cursive;
+    --fonte-padrao: 'Montserrat', Verdana, sans-serif;
+}
+
+
+
+/****************************************************  
+GERAIS
+*****************************************************/
+
+body{
+    background-color: white;
+    font-family: var(--fonte-padrao);
+}
+
+h1{
+    color: var(--cor5);
+    font-family: var(--fonte-decorativa);
+    margin-top: 0px;
+    font-weight: 700;
+}
+
+h2{
+    color: var(--cor2);
+    text-align: left;
+    margin: 0px;
+    padding-top: 20px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+a{
+    text-decoration: none; 
+}
+
+.button{     
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: var(--cor5);
+    border-color: var(--cor4);
+    font: bold 16px var(--fonte-padrao);
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: var(--cor4);
+    border-color: var(--cor3);
+}
+
+
+
+/****************************************************  
+HEADER
+*****************************************************/
+
+.logotipo{
+    width: 260px;
+}
+
+header{
+    text-align: center;
+    padding-top: 20px;
+}
+
+header > a > img{
+    padding-bottom: 10px;
+    pointer-events: none;
+}
+
+nav{
+    background-color: var(--cor2);
+    padding: 10px 0px;
+    border-radius: 10px 10px 0px 0px;
+    max-width: 1280px;
+    /*height: 45px;*/ 
+    margin: auto;      
+}
+
+nav a{
+    color: white;
+    font-weight: bold;   
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+}
+
+nav a:hover{
+    background-color: var(--cor1);
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 0px;
+}
+
+.botaoMenu{
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    nav a{
+        display: inline-block;
+    }
+
+    nav{
+        padding: 0px;
+        border-radius: 0px;
+        display: none;
+    }
+
+    .logotipo{
+        width: 200px;
+    }
+
+    header div{
+        display: flex;
+        justify-content: right;
+        background-color: var(--cor2);
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    .botaoMenu{
+        display: block;
+        position: relative;
+        border: none;
+        background-color: transparent;
+        margin: 5px 10px;
+    }
+}
+
+
+
+/****************************************************  
+MAIN
+*****************************************************/
+
+main{
+    max-width: 1280px;
+    margin: auto;
+    margin-bottom: 0px;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.082);
+}
+
+main p{
+    color: var(--cor6);
+    margin-bottom: 0px;
+    text-align: justify;
+}
+
+
+
+/**************************************************** 
+FOOTER
+*****************************************************/
+
+footer{
+    background-color: var(--cor2);
+    max-width: 1280px;
+    margin: auto;
+    margin-top: 0px;
+    padding: 0px;
+}
+
+#footer1{
+    padding: 25px 10px 25px 40px;
+}
+
+#footer1 > div{
+    padding: 10px 10px;
+}
+
+footer p{
+    padding-top: 5px;
+}
+
+footer a, footer p{
+    color: white;
+    font-weight: 600;
+    margin: 0px;
+}
+
+footer h3{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+footer a:hover, footer h3{
+    color: var(--cor3);
+    margin-top: 0px;
+    text-decoration: none;
+}
+
+a img{
+    padding: 5px 10px; 
+    pointer-events: none;
+}
+
+#copyright_footer{
+    background-color: var(--cor4);
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    padding: 5px;
+}
+
+
+
+/****************************************************  
+QUEM SOMOS
+*****************************************************/
+
+.div_sobre{
+    padding: 40px 30px 60px 30px; 
+}
+
+.div_sobre h1{
+    padding-left: 30px;
+}
+
+.div_sobre > div{
+    padding-top: 20px;
+    margin: 0px;
+    justify-content: space-evenly;
+}
+
+.div_sobre > div > div > h2{
+    padding-bottom: 10px;
+    padding-top: 0px;
+}
+
+.div_sobre > div > div > img{
+    width: 100%;
+    border-radius: 10px;
+    max-width: 600px;
+    padding-bottom: 20px;
+    pointer-events: none;
+}
+
+@media screen and (max-width: 768px) {
+    .div_sobre{
+        padding: 40px 10px 50px 10px; 
+    }
+
+    .div_sobre > div > div{
+        text-align: center;
+    }
+
+    .div_sobre > div > div > img{
+        margin-top: 20px;
+    }
+}
+
+
+
+/****************************************************  
+SERVIÇOS
+*****************************************************/
+
+.div_servicos{
+    padding: 40px 0px 40px 60px;
+}
+
+.div_servicos > h1{
+    padding-bottom: 20px;
+}
+
+.banner_loja{
+    max-width: 1280px;
+    max-height: 500px;
+    width: 100%;
+}
+
+.clinica > div > ul{
+    color: var(--cor6);
+    text-align: left;
+    margin: 0px;
+    padding: 20px;
+    list-style-position: inside;
+}
+
+.clinica > div > img{
+    border-radius: 10px;
+    margin-bottom: 10px;
+    max-width: 400px;
+    pointer-events: none;
+}
+
+.clinica{
+    display: flex;
+}
+
+.clinica > div{
+    margin-bottom: 10px;
+    padding: 0px 30px 20px 0px;
+    text-align: right;
+}
+
+.div2{
+    text-align: center;
+}
+
+.clinica > div > h2{
+    padding-top: 0px;
+    padding-bottom: 10px;
+}
+
+.petshop > div > ul{
+    color: var(--cor6);
+    text-align: left;
+    margin: 0px;
+    padding: 20px;
+    list-style-position: inside;
+}
+
+.petshop > div > img{
+    border-radius: 10px;
+    margin-bottom: 20px;
+    max-width: 400px;
+    pointer-events: none;
+}
+
+.petshop{
+    display: flex;
+}
+
+.petshop > div{
+    padding: 0px 30px 20px 0px;
+    text-align: right;
+}
+
+.petshop > div > h2{
+    padding-top: 0px;
+    padding-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .clinica > div > img{
+        max-width: 400px;
+    }    
+
+    .petshop > div > img{
+        max-width: 400px;
+    }   
+
+    .clinica > div, .petshop > div{
+        padding: 0px ;
+        text-align: center;
+    }
+
+    .div_servicos{
+        text-align: center;
+        padding: 40px 10px 40px 40px;
+    }
+
+    .div_servicos > h1{
+        text-align: left;
+    }
+}
+
+
+
+/****************************************************  
+INDEX
+*****************************************************/
+
+.index{
+    text-align: center;
+}
+
+.banner{
+    max-width: 1280px;
+    max-height: 500px;
+    width: 100%;
+    pointer-events: none;
+}
+
+.faixa_banners{
+    justify-content: space-evenly;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin: auto;
+}
+
+.faixa_banners > div > a > img{
+    max-width: 300px;
+    padding: 10px;
+    border-radius: 15px;
+    pointer-events: none;
+}
+
+.faixa_banners > div {
+    justify-content: center;
+    padding: 0px 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .faixa_banners > div > a > img{
+        max-width: 220px;
+    }
+}
+
+/*CARROSSEL*/
+
+.slideshow-container{
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    width: 100%;
+    padding-bottom: 40px;
+}
+
+.mySlides{
+    pointer-events: none;
+}
+
+.mySlides img{
+    width: 100%;
+}
+
+.dot-container{
+    text-align: center;
+    position: relative;
+    bottom: 70px;
+}
+
+.dot{
+    width: 5%;
+    height: 10px;
+    margin: 0 2px;
+    display: inline-block;
+    background-color: #bbb;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.6s ease;
+}
+
+.prev, .next{
+    position:absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.prev:hover, .next:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+
+}
+
+.active, .dot:hover{
+    background-color: #717171;
+}
+
+/*FIM CARROSSEL*/
+
+
+
+/****************************************************  
+CONTATO
+*****************************************************/
+
+.div_contato{
+    padding: 40px 60px 30px 60px;
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+}
+
+.div_contato > h1{
+    padding-bottom: 20px; 
+}
+
+
+
+/****************************************************  
+AGENDAMENTO
+*****************************************************/
+
+.div_agendamento{
+    padding: 40px 60px 30px 60px; 
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+}
+
+.div_agendamento > h1{
+    padding-bottom: 20px; 
+}
+
+form select{
+    width: 200px;
+    height: 38px;
+    font: 16px montserrat;
+    color: var(--cor6);
+    border: 0.5px solid #c8c8c8;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+
+
+
+
+
+
+
+

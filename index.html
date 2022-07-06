@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SuperPata Clínica e Petshop</title>
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link href="css/estilo.css" rel="stylesheet" type="text/css"/> 
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html"><img src="imagens/logotipo.png" class="logotipo" alt="logotipo" title=""></a>
+
+        <div>
+            <button class="botaoMenu" type="button" title="botaoMenu"><img class="menu" src="imagens/menu.png" alt="" width="100%"></button>
+        </div>
+        
+        <nav id="nav">
+            <a href="index.html">Home</a>
+            <a href="quemsomos.html">Quem Somos</a>
+            <a href="contato.html">Contato</a>
+            <a href="servicos.html">Serviços</a>
+            <a href="agendamento.html">Agendamento</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="index">
+            <img src="imagens/banner_home.png" class="banner" alt="" title="">
+            
+            <div class="faixa_banners container-fluid row">
+                <div class="row">
+                    <a href="#"><img class="col-sm-6 col-md-6" src="imagens/banner1.png" alt="" width="100%"></a>
+                    <a href="#"><img class="col-sm-6 col-md-6" src="imagens/banner2.png" alt="" width="100%"></a>
+                </div>
+                <div class="row">
+                    <a href="#"><img class="col-sm-6 col-md-6" src="imagens/banner3.png" alt="" width="100%"></a>
+                    <a href="#"><img class="col-sm-6 col-md-6" src="imagens/banner4.png" alt="" width="100%"></a>
+                </div>
+            </div>
+        </div>
+    
+    <div class="slideshow-container">
+    
+            <div class="mySlides">
+                <img src="imagens/carrossel1.png" alt="">
+            </div>
+    
+            <div class="mySlides">
+                <img src="imagens/carrossel2.png" alt="">
+            </div>
+    
+            <div class="mySlides">
+                <img src="imagens/carrossel3.png" alt="">
+            </div>
+    
+            <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+            <a class="next" onclick="plusSlides(1)">&#10095</a>
+    </div>
+    
+    <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    </main>
+
+    <footer>
+        <div id="footer1" class="container-fluid row">
+            <div class="col-sm-12 col-md-4 text-center">
+                <h3>Unidades</h3>
+                <p><a href="#">I - Rua Java, 2034 - São Bernardo do Campo </a></p>
+                <p><a href="#">II - Rua Ada, 1587 - São Caetano do Sul</a></p>
+            </div>
+            
+            <div class="col-sm-12 col-md-4 text-center">
+                <h3>Contato</h3>
+                <p>Telefone: (11) 1111-1111</p>
+                <p>E-mail: contato@superpata.com.br</p>
+            </div>
+
+            <div class="col-sm-12 col-md-2 text-center">
+                <h3>Políticas</h3>
+                <p><a href="#">Troca e Devolução</a></p>
+                <p><a href="#">Privacidade</a></p>
+            </div>
+            
+            <div class="col-sm-12 col-md-2 text-center">
+                <h3>Redes Sociais</h3>            
+                <div class="icones_redes">
+                    <a href="#"><img src="imagens/instagram.png" width="" alt="instagram" title=""></a>
+                    <a href="#"><img src="imagens/whatsapp.png" width="" alt="whatsapp" title=""></a>
+                </div>
+            </div>
+        </div>           
+
+        <div>
+            <p id="copyright_footer">Copyright &copy; Super Pata - Desenvolvido por Ana Irineu</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js" type="text/javascript"></script>  
+
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

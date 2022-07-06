@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SuperPata Clínica e Petshop</title>
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link href="css/estilo.css" rel="stylesheet" type="text/css"/> 
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html"><img src="imagens/logotipo.png" class="logotipo" alt="logotipo" title=""></a>
+
+        <div>
+            <button class="botaoMenu" type="button" title="botaoMenu"><img class="menu" src="imagens/menu.png" alt="" width="100%"></button>
+        </div>
+
+        <nav id="nav">
+            <a href="index.html">Home</a>
+            <a href="quemsomos.html">Quem Somos</a>
+            <a href="contato.html">Contato</a>
+            <a href="servicos.html">Serviços</a>
+            <a href="agendamento.html">Agendamento</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="div_agendamento">
+        
+            <h1>Agendamento</h1>
+        
+            <form action="" method="POST">
+                <div class="mb-3">
+                    <label for="tutor" class="form-label">Tutor</label>
+                    <input asp-for="tutor" type="text" class="form-control" id="exampleFormControlInput1" title="tutor" placeholder="" required>
+                </div>
+                <div class="mb-3">
+                    <label for="pet" class="form-label">Pet</label>
+                    <input asp-for="pet" type="text" class="form-control" id="exampleFormControlInput1" title="pet" placeholder="">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input asp-for="email" type="email" class="form-control" id="exampleFormControlInput1" title="email" placeholder="" required>
+                </div>
+                <div class="mb-3">
+                    <label for="telefone" class="form-label">Telefone</label>
+                    <input asp-for="telefone" type="tel" class="form-control" id="exampleFormControlInput1" title="tel" placeholder="">
+                </div>
+                <div class="mb-3">
+                    <label for="DataAgendamento" class="form-label">Data</label>
+                    <input asp-for="DataAgendamento" type="date" class="form-control" id="exampleFormControlInput1" title="DataAgendamento" placeholder="" required>
+                </div>
+                <div>
+                    <select asp-for="periodo" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" >
+                        <option selected id="select">Período</option>
+                        <option value="(Manhã)">Manhã</option>
+                        <option value="(Tarde)">Tarde</option>
+                        <option value="(Noite)">Noite</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="solicitacao" class="form-label">Solicitação</label>
+                    <textarea asp-for="solicitacao" class="form-control" id="exampleFormControlTextarea1" rows="3" title="solicitacao" required></textarea>
+                </div>
+        
+                <p><input type="submit" value="Agendar" class="button"></p>
+        
+            </form>
+        
+        </div>
+    </main>
+ 
+    <footer>
+        <div id="footer1" class="container-fluid row">
+            <div class="col-sm-12 col-md-4 text-center">
+                <h3>Unidades</h3>
+                <p><a href="#">I - Rua Java, 2034 - São Bernardo do Campo </a></p>
+                <p><a href="#">II - Rua Ada, 1587 - São Caetano do Sul</a></p>
+            </div>
+            
+            <div class="col-sm-12 col-md-4 text-center">
+                <h3>Contato</h3>
+                <p>Telefone: (11) 1111-1111</p>
+                <p>E-mail: contato@superpata.com.br</p>
+            </div>
+
+            <div class="col-sm-12 col-md-2 text-center">
+                <h3>Políticas</h3>
+                <p><a href="#">Troca e Devolução</a></p>
+                <p><a href="#">Privacidade</a></p>
+            </div>
+            
+            <div class="col-sm-12 col-md-2 text-center">
+                <h3>Redes Sociais</h3>            
+                <div class="icones_redes">
+                    <a href="#"><img src="imagens/instagram.png" width="" alt="instagram" title=""></a>
+                    <a href="#"><img src="imagens/whatsapp.png" width="" alt="whatsapp" title=""></a>
+                </div>
+            </div>
+        </div>           
+
+        <div>
+            <p id="copyright_footer">Copyright &copy; Super Pata - Desenvolvido por Ana Irineu</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js" type="text/javascript"></script>  
+
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
